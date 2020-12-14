@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App Servicos", "App Servicos.csproj", "{DF3A10D2-CC4B-4CF8-8757-3B615C8FA826}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF3A10D2-CC4B-4CF8-8757-3B615C8FA826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF3A10D2-CC4B-4CF8-8757-3B615C8FA826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF3A10D2-CC4B-4CF8-8757-3B615C8FA826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF3A10D2-CC4B-4CF8-8757-3B615C8FA826}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E58859A6-C6AA-4CBB-BCE9-728E46EC522E}
+	EndGlobalSection
+EndGlobal

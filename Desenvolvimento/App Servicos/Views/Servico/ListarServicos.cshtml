@@ -1,0 +1,70 @@
+﻿@model List<App_Servicos.Models.Servico>
+@{
+    ViewData["NomeUsuario"] = ViewBag.Usuario.Usuario;
+    ViewData["UsuarioID"] = ViewBag.Usuario.IdUsuario;
+}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+
+
+    <style>
+
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+
+            @@media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+    </style>
+
+</head>
+
+<center>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4 card">
+                <center>
+                    <img class="bd-placeholder-img rounded-circle" src="data:image/png;base64,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" width="140" alt="Alternate Text" style="border-radius:50%" />
+                </center>
+                <h2>@item.NomeServico</h2>
+                <p>@item.Descricao</p>
+                <p>@item.Endereco</p>
+                <p>R$ @item.Valor</p>
+                <p>
+                    @Html.ActionLink("Contratar", "ContratarServico", "Servico", new { id= item.IdServico, IdUsuario = ViewBag.Usuario.IdUsuario}, new { @class="btn btn-success"})
+                </p>
+            </div>
+        }
+    </div>
+</center>
+<script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
