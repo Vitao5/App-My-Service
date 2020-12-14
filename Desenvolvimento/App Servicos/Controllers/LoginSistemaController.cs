@@ -19,9 +19,6 @@ namespace App_Servicos.Controllers
             ViewBag.ServicosContratados = db.Servico.Where(a => a.IdCliente == login.IdUsuario).ToList();
             return View(login);
         }
-        // public IActionResult Editar(int id)
-        // {
 
-        //}
     }
 }
