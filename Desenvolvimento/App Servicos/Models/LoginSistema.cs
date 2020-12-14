@@ -9,7 +9,6 @@ namespace App_Servicos.Models
     public class LoginSistema
     {
         public int IdUsuario { get; set; }
-        //public string Nome { get; set; }
         [Required(ErrorMessage = "campo obrigatorio")]
         public string Usuario { get; set; }
 
